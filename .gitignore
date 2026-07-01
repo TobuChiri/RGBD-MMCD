@@ -1,0 +1,50 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.pyre/
+.cache/
+.ipynb_checkpoints/
+
+# Datasets, logs, outputs, and temporary experiment artifacts
+datasets/
+log*/
+logs/
+output/
+outputs/
+checkpoints/
+weights/
+pretrained/**/*.pth
+*.pth
+*.ckpt
+*.pt
+*.onnx
+*.npy
+*.npz
+*.log
+*.ipynb
+
+# Native build artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+*.so
+*.o
+*.pyd
+*.dll
+*.dylib
+*.ninja
+.ninja_*
+
+# Editor and OS metadata
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
