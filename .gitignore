@@ -13,7 +13,8 @@ ENV/
 .ipynb_checkpoints/
 
 # Datasets, logs, outputs, and temporary experiment artifacts
-datasets/
+/DFormer/datasets/
+/Sigma_CD/datasets/
 log*/
 logs/
 output/

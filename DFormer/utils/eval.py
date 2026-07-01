@@ -1,6 +1,7 @@
 import pprint
 import time
 import argparse
+import os
 import torch
 import torch.nn as nn
 import torch.backends.cudnn as cudnn
@@ -47,6 +48,10 @@ torch._dynamo.config.suppress_errors = True
 with Engine(custom_parser=parser) as engine:
     args = parser.parse_args()
     config = getattr(import_module(args.config), "C")
+    if args.continue_fpath:
+        config.pretrained_model = None
+    if os.name == "nt":
+        config.num_workers = 0
     # exec("from " + args.config + " import C as config")
     logger = get_logger(config.log_dir, config.log_file, rank=engine.local_rank)
 

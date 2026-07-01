@@ -85,7 +85,7 @@ conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=
 
 pip install mmcv==2.1.0 -f https://download.openmmlab.com/mmcv/dist/cu118/torch2.1/index.html
 
-pip install tqdm opencv-python scipy tensorboardX tabulate easydict ftfy regex
+pip install "numpy<2" opencv-python==4.8.1.78 tqdm scipy tensorboardX tabulate easydict ftfy regex
 ```
 
 
@@ -260,7 +260,6 @@ Our implementation is mainly based on [mmsegmentaion](https://github.com/open-mm
 ### License
 
 Code in this repo is for non-commercial use only.
-
 
 
 
