@@ -11,6 +11,7 @@ ENV/
 .pyre/
 .cache/
 tmp/
+figures/
 .ipynb_checkpoints/
 
 # Datasets, logs, outputs, and temporary experiment artifacts
