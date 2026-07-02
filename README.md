@@ -16,7 +16,9 @@ ConD starts from an existing checkpoint, freezes the original encoder and decode
 
 ## Method Flow
 
-The paper's Fig. 2 gives the method overview. Stage 1 reuses an already trained RGB-D segmentation model. Stage 2 freezes the original encoder/decoder, samples complete or missing-modality inputs through Condition Dropout, trains copied encoders, and injects the copied-encoder outputs through zero-initialized 1x1 convolutions before decoding.
+![Condition Dropout pipeline from the paper](figures/paper-method-overview.png)
+
+The method overview above is cropped from Fig. 2 of the paper. Stage 1 reuses an already trained RGB-D segmentation model. Stage 2 freezes the original encoder/decoder, samples complete or missing-modality inputs through Condition Dropout, trains copied encoders, and injects the copied-encoder outputs through zero-initialized 1x1 convolutions before decoding.
 
 ## Repository Layout
 
