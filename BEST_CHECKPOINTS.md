@@ -1,6 +1,6 @@
-# Local Verification Checkpoints
+# Released Checkpoints
 
-Large checkpoint files are not committed to GitHub. The local CoLA workspace used for verification contained the checkpoints below.
+Large checkpoint and pretrained weight files are tracked with Git LFS in this repository. The files below are included or intentionally documented for this release.
 
 ## DFormer / CoLA
 
@@ -12,9 +12,9 @@ Large checkpoint files are not committed to GitHub. The local CoLA workspace use
 ## Sigma_CD
 
 - Local trained Sigma checkpoints were not present in the CoLA workspace.
-- VMamba pretrained weights used by the README-reported Sigma variants were present locally but are not committed:
-  - `Sigma_CD/pretrained/vmamba/vssmbase_dp06_ckpt_epoch_241.pth`
+- VMamba pretrained weights used by the Sigma variants are included when the actual local weight file is available:
   - `Sigma_CD/pretrained/vmamba/vssmsmall_dp03_ckpt_epoch_238.pth`
-  - `Sigma_CD/pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth`
+
+Note: the `vssmbase` and `vssmtiny` entries in this workspace are incomplete placeholder pointer files rather than actual local weight files, so they are intentionally not released here.
 
 Generated from source workspace: `E:\code\CoLA`

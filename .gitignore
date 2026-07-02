@@ -10,6 +10,7 @@ ENV/
 .mypy_cache/
 .pyre/
 .cache/
+tmp/
 .ipynb_checkpoints/
 
 # Datasets, logs, outputs, and temporary experiment artifacts
